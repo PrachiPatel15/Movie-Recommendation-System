@@ -60,4 +60,32 @@
      - In cosine similarity, for each row based on their Title we put 10 columns (Duration, Country, Language, Director, Description, IMDb Rating, Cast, Year, Rating, Genre) into one column ("All Columns") to represent our bag of words.
      - Then created cosine similarity matrix and got result which was giving the recommendation.
      
-      ![](https://github.com/PrachiPatel15/Movie-Recommendation-System/blob/main/cos_sim.png)
+       ![](https://github.com/PrachiPatel15/Movie-Recommendation-System/blob/main/cos_sim.png)
+> Supervised Models:
+  - Random Forest
+    - Accuracy: 63%
+    - To improve our algorithm's performance and increase the accuracy, we used different methods such as using hyperparameters and using some important features too.
+    - By using GridSearchCV We got 62% accuracy on RF algorithm.
+    
+  - KNN:
+    - First defined some new columns in order to get optimised result.
+    - Then did vectorization on string containing columns.
+    - Divided dataset into three parts - __train set, validation set, test set__
+    - Applied KNeighborsClassifier and got accuracy: __54%__
+  
+  - Linear Regression:
+    - Accuracy: __60%__
+ 
+ - We took all the algorithms and measured __MSE, MAE, rMSE__ and compared them.
+  - The best result among all the three models was from __RANDOM FOREST(62%)__.
+
+- Lastly we did accuracy comparison of Random Forest and KNN.
+  ![](https://github.com/PrachiPatel15/Movie-Recommendation-System/blob/main/accuracy_comp.png)
+
+- Error comparison of all the models.
+  ![](https://github.com/PrachiPatel15/Movie-Recommendation-System/blob/main/error_comp.png)
+  
+# Conclusion
+- According to the results of the implemented algorithms that mentioned above, both the film recommendation and IMDb prediction systems are working in a some extent.
+- Taking everything into consideration, For IMDb prediction algorithms, in clasification part, at first both KNN and RF have close accuracies but after implementing the conter vectorizer, we saw that RF gives a higher accuracy value. For the regression, we concluded that linear regression was performed better when we compare it with KNN, RF and Decision Tree regressions. Also, for our recommendation systems cosine similarity performed better than k-means.
+- For our recommendation systems, cosine similarity's results are more consistent.
