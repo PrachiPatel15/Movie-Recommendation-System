@@ -14,3 +14,17 @@
 - ***Packages:*** pandas, numpy, sklearn, matplotlib, seaborn
 - ***Dataset:*** Netflix: https://www.kaggle.com/shivamb/netflix-shows
                  IMDb data: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset
+
+# Data Preprocessing
+- First we loaded both the dataset 'netflix_titles.csv' and 'IMDb movies.csv'.
+- In order to recommend the movie and shows we merged both the dataset.
+
+# Data Cleaning
+- Firstly, dataset was containing some duplicate values so we dropped them.
+- Also dataset has plenty NULL values so it needed to be dropped where it has high null values and some of the less containing null columns were filled with some values.
+
+# Exploratory data analysis
+- We looked at the top 10 TV shows and Movies by their ratings.
+- We plotted different pie-charts, bar-graphs and box plots showing how the content of Netfix is distributed according to Age, how the ratings distributed and contents by their Genre respectively. Below are some glimps of them
+  - ![](https://github.com/PrachiPatel15/Movie-Recommendation-System/blob/main/contents(genre).png)![](https://github.com/PrachiPatel15/Movie-Recommendation-System/blob/main/ratings.png)
+- 
